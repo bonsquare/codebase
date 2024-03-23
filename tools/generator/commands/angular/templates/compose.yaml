@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  {projectName}:
+    image: {projectName}:local
+    container_name: {projectName}
+    restart: unless-stopped
+    ports:
+      - {port}:4000
+    

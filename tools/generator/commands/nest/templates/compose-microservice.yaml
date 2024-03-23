@@ -1,0 +1,14 @@
+version: '3'
+
+networks:
+  default:
+    name: app-net 
+    external: true
+
+services:
+
+  {projectName}:
+    image: {projectName}:local
+    container_name: {projectName}
+    restart: unless-stopped
+    

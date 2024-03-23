@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "regions": ["hnd1"],
+  "installCommand": null,
+  "buildCommand": null,
+  "devCommand": null,
+  "git": {
+    "deploymentEnabled": false
+  },
+  "rewrites": [{ "source": "/(.*)", "destination": "/api" }],
+  "functions": {
+    "api/index.js": {
+      "includeFiles": "dist/**"
+    }
+  }
+}
